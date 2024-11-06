@@ -1,0 +1,29 @@
+$primary : 1rem;
+$secondary : 3rem;
+$forTitle : 3rem;
+    @mixin p-style{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-size: $primary;
+        
+    } @mixin title-style{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-style:oblique;
+    } @mixin li-style {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+        font-size: $secondary;
+    } @mixin a-style {
+        text-decoration: none;
+    }
+
+@mixin title-big ($property , $value){
+    font-#{$property}: $value
+    
+}
+
+.title {
+    @include title-big( "size", $forTitle  )
+    
+}

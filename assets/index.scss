@@ -1,0 +1,77 @@
+@import "../partials/reset" ;
+@import "../partials/colori";
+@import "../partials/font" ;
+@import "../partials/mixin-generici";
+@import "../partials/bottoni" ;
+@import "../partials/spaziature";
+@import "../partials/animazioni";
+
+body {
+    box-sizing: border-box;
+       
+    }
+
+
+#nav_bar{
+    width: 100%;
+    height: 100px;
+    @include violet();
+
+    #nav_ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+    
+        li {
+            margin-left: 2rem;
+            
+        }
+}
+
+    #headline {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+
+    
+    button {
+        @include genericButtons() ;
+        
+        
+    }
+    .btn_1 {
+        @include btn_1()
+    }
+    .btn_2 {
+        @include btn_2()
+    }
+    .btn_3 {
+        @include btn_3()
+    }
+
+     h1 {
+        @include title-style()
+     }
+
+     .card-body {
+        @include body_card();
+        @include displai_flex_colum();
+        @include cardSpacing();
+        @include floating()
+     }
+
+     P{
+        @include white();
+        @include p-style()
+     }
+
+     .button {
+        @include white()
+     }
+     .container {
+        @include displai_flex_row()
+     }
+ 

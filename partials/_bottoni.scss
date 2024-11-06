@@ -1,0 +1,18 @@
+$allTheButton: 1rem ;
+
+@mixin genericButtons {
+    font-size: $allTheButton;
+    margin-left: $allTheButton;
+    margin-top: $allTheButton;
+}
+
+@mixin btn_1{
+    background-color: $colorbtn_1 ;
+}
+@mixin btn_2{
+    background-color: $colorbtn_2 ;
+}
+
+ @mixin btn_3{
+    background-color: $colorbtn_3 ;
+}
